@@ -208,3 +208,64 @@ a lot of other tooling stuff.
    command you wish to learn. Now repeat to step 1 for any other pain points.
 
 ## Using vim as an IDE
+vim by itself is not very nice to use. However, we can augment it so that
+it can become an IDE like other (heavier) text editors.
+
+vim has some plugin functionality. However, almost no one uses them by itself.
+Instead, people usually install plugin managers to make their life easier.
+Today, we are going to install `vim-plug`. (There are other alternatives like
+`pathogen`, `Vundle`).
+
+1. Google `vim-plug`.
+2. Open the repository.
+3. Follow the instructions.
+
+Now that we have installed `vim-plug`, let us add our first plugin. You can
+configure `vim` settings at this file called `.vimrc`.
+
+1. Type `vim ~/.vimrc` to open the file.
+2. Type in `set number` inside.
+3. Save and exit.
+4. Open vim again and edit stuff. You should now see line numbers.
+
+Now, let us try to install some plugins.
+
+1. Open your vimrc file again. You can actually open `vim`, and do `:e $MYVIMRC`
+   now.
+2. Type in this block:
+   ```vimscript
+   call plug#begin()
+   Plug 'tpope/vim-sensible'
+   Plug 'vim-airline/vim-airline'
+   call plug#end()
+   ```
+3. Save and exit vim.
+4. Reopen and run `:PlugInstall`. You should now see that vim is cloning a
+   bunch of repositories.
+5. Once it is done, exit and open vim.
+
+`vim-sensible` gives you a sane default configuration to start with. This
+includes things like showing line number, syntax highlighting, and whatnot.
+`vim-airline` gives you a status bar at the bottom. The default is pretty good.
+
+Here are some plugins that makes your vim closer and closer to becoming an IDE.
+- `scrooloose/nerdtree` gives you a sidebar to browse files.
+- `junegunn/fzf` is a fuzzy finder, so that you can find your files quickly.
+- `jiangmiao/auto-pairs` adds the closing pair automatically when you write
+  things like open brackets `(`, `[` etc.
+- `Shougo/deoplete.nvim` adds (a better) autocompletion.
+- `autozimu/LanguageClient-neovim` adds some things like going to definition,
+  etc.
+- `tpope/vim-surround` allows you to use `S` to add parantheses, etc.
+
+For every language, there are also typically plugins that add syntax
+highlighting support and whatnot. For example, you can check
+- `derekwyatt/vim-scala`
+- `tpope/vim-rails`
+- `pangloss/vim-javascript`
+- `mxw/vim-jsx`
+- `leafgarland/typescript-vim`
+- `peitalin/vim-jsx-typescript`
+- `rust-lang/rust.vim`
+
+and so on.
