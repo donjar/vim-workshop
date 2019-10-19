@@ -269,3 +269,19 @@ highlighting support and whatnot. For example, you can check
 - `rust-lang/rust.vim`
 
 and so on.
+
+There are many vimrc references that you can follow. For example, mine is at
+https://github.com/donjar/dotfiles/blob/master/.config/nvim/init.vim. However,
+note that I believe for maximal benefit, one should try to repeat the process
+I mentioned earlier (looking for pain points and solving them), instead of
+blindly copying vimrc files.
+
+## Miscellaneous tips
+- A lot of IDEs have vim keybindings. You can even make your browser have
+  vim keybindings by using this plugin called Vimium.
+- You can show multiple buffers by using `:split` or `:vsplit`, which you can
+  shortcut as `:sp` and `:vs`. You can navigate between them by using
+  `Ctrl-W Ctrl-W` or `Ctrl-W h` etc.
+- The initial learning curve is indeed steep. Do not be discouraged if your
+  productivity is halved in the first few months or so. It does pay off very
+  well!
