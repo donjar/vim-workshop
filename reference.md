@@ -282,6 +282,10 @@ blindly copying vimrc files.
 - You can show multiple buffers by using `:split` or `:vsplit`, which you can
   shortcut as `:sp` and `:vs`. You can navigate between them by using
   `Ctrl-W Ctrl-W` or `Ctrl-W h` etc.
+- There is this thing called neovim (https://github.com/neovim/neovim) which
+  a lot of people use (me included). Some of the plugins I mentioned above is
+  only compatible with neovim. I advise you to install it: it has almost no
+  difference with vim, in terms of the user.
 - The initial learning curve is indeed steep. Do not be discouraged if your
   productivity is halved in the first few months or so. It does pay off very
   well!
