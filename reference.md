@@ -278,7 +278,9 @@ blindly copying vimrc files.
 
 ## Miscellaneous tips
 - A lot of IDEs have vim keybindings. You can even make your browser have
-  vim keybindings by using this plugin called Vimium.
+  vim keybindings by using this plugin called Vimium. You can even make emacs
+  have vim keybindings!
+- Map your caps lock to escape, for the sake of your pinky.
 - You can show multiple buffers by using `:split` or `:vsplit`, which you can
   shortcut as `:sp` and `:vs`. You can navigate between them by using
   `Ctrl-W Ctrl-W` or `Ctrl-W h` etc.
